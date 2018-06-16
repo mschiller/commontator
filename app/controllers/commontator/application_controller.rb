@@ -1,6 +1,6 @@
 module Commontator
   class ApplicationController < ActionController::Base
-    before_action :set_user, :ensure_user
+    before_action :set_locale, :set_user, :ensure_user
 
     rescue_from SecurityTransgression, with: -> { head(:forbidden) }
 
@@ -12,6 +12,10 @@ module Commontator
 
     def set_user
       @user = Commontator.current_user_proc.call(self)
+    end
+
+    def set_locale
+      I18n.locale = params[:locale] if params[:locale] and request.xhr?
     end
 
     def ensure_user
