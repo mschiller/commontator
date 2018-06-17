@@ -58,7 +58,6 @@ de:
       errors:
         already_deleted: "Dieser Kommentar wurde bereits gelöscht."
         create: "Kommentar kann nicht veröffentlicht werden:"
-        double_posted: "Kommentar ist ein Duplikat."
         not_deleted: "Dieser Kommentar wurde nicht gelöscht.."
         update: "Kommentar kann nicht bearbeitet werden:"
       status:

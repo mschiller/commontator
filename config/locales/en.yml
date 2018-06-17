@@ -58,7 +58,6 @@ en:
       errors:
         already_deleted: "This comment has already been deleted."
         create: "This comment could not be posted because:"
-        double_posted: "is a duplicate of another comment."
         not_deleted: "This comment is not deleted."
         update: "This comment could not be modified because:"
       status:
